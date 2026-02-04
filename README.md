@@ -90,29 +90,36 @@ Install Docker first:
 
 
 Run Endee server:
+
+```bash
 docker run -d -p 8080:8080 -v endee-data:/data --name endee-server endeeio/endee-server:latest
+```
+
 
 
 Check if it’s running:
-
+```
 docker ps
-
+```
 🧪 Step 2: Setup Backend
 
 Go to backend folder:
 
+```
 cd backend
-
+```
 
 Install dependencies:
 
+```
 pip install -r requirements.txt
-
+```
 
 Run the server:
 
+```
 uvicorn app.main:app --reload
-
+```
 
 You should see:
 
@@ -122,12 +129,12 @@ You should see:
 
 Open in browser:
 
+```
 http://127.0.0.1:8000/search?q=ai
-
-
+```
 
 Try:
-
+```
 http://127.0.0.1:8000/search?q=machine
  learning
 
@@ -136,6 +143,7 @@ http://127.0.0.1:8000/search?q=vector
 
 http://127.0.0.1:8000/search?q=semantic
  search
+```
 
 You will get meaning-based results, not just keyword matches.
 
