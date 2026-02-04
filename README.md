@@ -7,77 +7,93 @@ Instead of matching keywords, the system understands the meaning of text using e
 
 The project is designed as a simple, practical AI application suitable for internship evaluation, showing:
 
-How embeddings work
+•	How embeddings work
 
-How vector databases like Endee are used
+•	How vector databases like Endee are used
 
-How semantic search / RAG-style systems are built
+•	How semantic search / RAG-style systems are built
 
-How to integrate AI models with a backend API
+•	How to integrate AI models with a backend API
+
+
+
 
 🧠 Problem Statement
 
 Traditional search systems rely on keyword matching, which fails when:
 
-The user uses different words with the same meaning
+•	The user uses different words with the same meaning
 
-The query is semantically similar but not textually similar
+•	The query is semantically similar but not textually similar
 
 This project solves that by:
 
-Converting text into vector embeddings
+•	Converting text into vector embeddings
 
-Storing/searching them using Endee vector database
+•	Storing/searching them using Endee vector database
 
-Returning results based on semantic similarity, not exact words
+•	Returning results based on semantic similarity, not exact words
+
+
+
+
 
 🏗️ System Design / Architecture
 
 Components:
 
-FastAPI → Backend API server
+•	FastAPI → Backend API server
 
-Sentence Transformers → Converts text into embeddings (vectors)
+•	Sentence Transformers → Converts text into embeddings (vectors)
 
-Endee → Stores and searches vectors efficiently
+•	Endee → Stores and searches vectors efficiently
 
-Python Requests → Communicates with Endee API
+•	Python Requests → Communicates with Endee API
 
-🧩 How Endee Is Used
 
+
+
+🧩How Endee Is Used
 Endee acts as the vector database in this project:
 
-Document embeddings are stored (upserted) into Endee
+•	Document embeddings are stored (upserted) into Endee
 
-User queries are converted into embeddings
+•	User queries are converted into embeddings
 
-Endee performs similarity search on vectors
+•	Endee performs similarity search on vectors
 
-Most relevant documents are returned
+•	Most relevant documents are returned
 
 This demonstrates a real-world use case of Endee for:
 
-Semantic Search
+•	Semantic Search
 
-RAG systems
+•	RAG systems
 
-AI-powered search engines
+•	AI-powered search engines
 
-Recommendation systems
+•	Recommendation systems
+
+
 
 ⚙️ Tech Stack
 
-Python
+•	Python 3.10+
 
-FastAPI
+•	FastAPI
 
-Sentence-Transformers (all-MiniLM-L6-v2)
+•	Sentence-Transformers (all-MiniLM-L6-v2)
 
-Endee Vector Database (Docker)
+•	Endee Vector Database (Docker)
 
-Requests
+•	Requests
 
-Uvicorn
+•	Uvicorn
+
+
+
+
+
 
 📂 Project Structure
 semantic-search-endee/
@@ -147,14 +163,18 @@ http://127.0.0.1:8000/search?q=semantic
 
 You will get meaning-based results, not just keyword matches.
 
+
+
 🎯 Use Cases
 
-Semantic Search Engines
+•	Semantic Search Engines
 
-RAG (Retrieval Augmented Generation) Systems
+•	RAG (Retrieval Augmented Generation) Systems
 
-AI Assistants
+•	AI Assistants
 
-Document Search
+•	Document Search
 
-Recommendation Systems
+•	Recommendation Systems
+
+
