@@ -1,4 +1,5 @@
 🚀 Semantic Search using Endee Vector Database
+
 📌 Project Overview
 
 This project demonstrates a Semantic Search system built using Endee, a high-performance open-source vector database.
@@ -31,19 +32,6 @@ Storing/searching them using Endee vector database
 Returning results based on semantic similarity, not exact words
 
 🏗️ System Design / Architecture
-User Query
-   |
-   v
-FastAPI Backend
-   |
-   v
-Embedding Model (Sentence Transformers)
-   |
-   v
-Vector Search (Endee)
-   |
-   v
-Top Similar Documents Returned
 
 Components:
 
@@ -93,18 +81,9 @@ Uvicorn
 
 📂 Project Structure
 semantic-search-endee/
-│
-├── backend/
-│   ├── app/
-│   │   ├── main.py          # FastAPI entry point
-│   │   ├── embed.py         # Creates embeddings
-│   │   ├── indexer.py       # Indexes documents into Endee
-│   │   ├── endee_client.py  # Talks to Endee API
-│   │   └── docs/
-│   │       └── sample_docs.txt
-│   └── requirements.txt
-│
-└── README.md
+
+<img width="640" height="395" alt="Screenshot 2026-02-05 001535" src="https://github.com/user-attachments/assets/4b793dfe-05da-4b85-847d-3118cea56cc5" />
+
 
 🐳 Step 1: Run Endee using Docker
 Install Docker first:
@@ -144,6 +123,7 @@ You should see:
 Open in browser:
 
 http://127.0.0.1:8000/search?q=ai
+
 
 
 Try:
